@@ -1,1 +1,1 @@
-"web: flask; gunicorn forumv2:'create_app()'" 
+"web: python flask gunicorn forumv2:'create_app()'" 
