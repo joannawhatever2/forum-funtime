@@ -6,5 +6,6 @@ def create_app():
 	app.config.from_mapping(
 		SECRET_KEY = os.environ.get('SECRET_KEY') or'dev_key'
 	)
-	
+	from . import forum
+	app.register_blueprint(forum.bp)
 	return app

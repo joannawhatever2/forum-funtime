@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Blueprint
 
-app = Flask(__name__)
+bp = Blueprint('forum', __name__)
 
-app.route('/')
+bp.route('/')
 def home():
 	return '<h1>You did it!</h1>'
